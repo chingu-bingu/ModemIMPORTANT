@@ -1,4 +1,3 @@
-// log.js
 exports.handler = async function(event, context) {
   const ip = event.headers['x-forwarded-for'] || event.headers['client-ip'];
   const browser = event.headers['user-agent'];
@@ -14,4 +13,3 @@ exports.handler = async function(event, context) {
     },
   };
 };
-
